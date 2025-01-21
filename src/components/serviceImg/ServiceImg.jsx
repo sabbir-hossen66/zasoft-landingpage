@@ -3,7 +3,7 @@ import { FaQuoteLeft } from 'react-icons/fa';
 
 const ServiceImg = () => {
   return (
-    <div className="relative bg-cover bg-center h-[400px] sm:h-[500px] lg:h-[600px]" style={{ backgroundImage: "url('https://i.ibb.co.com/Rpmppb0/pexels-senanur-ulusoy-182138396-15924271.jpg')" }}>
+    <div className="mt-20 relative bg-cover bg-center h-[400px] sm:h-[500px] lg:h-[600px]" style={{ backgroundImage: "url('https://i.ibb.co.com/Rpmppb0/pexels-senanur-ulusoy-182138396-15924271.jpg')" }}>
       {/* Overlay */}
       <div className="absolute inset-0 bg-black bg-opacity-50"></div>
 
