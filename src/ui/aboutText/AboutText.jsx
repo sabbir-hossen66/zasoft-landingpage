@@ -5,7 +5,7 @@ const AboutText = () => {
   return (
     <div className='flex-col-1   lg:flex justify-between text-center'>
       {/* left side */}
-      <div>hi</div>
+      <div>hi I'm sabbir from india.</div>
 
       {/* right side */}
       <div>

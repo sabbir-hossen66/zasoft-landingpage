@@ -1,5 +1,5 @@
 import About from "./components/about/About"
-
+import Footer from "./components/footer/Footer";
 
 function App() {
 
@@ -8,6 +8,7 @@ function App() {
     <div className="font-raleway">
 
       <About />
+      <Footer />
     </div>
   )
 }
