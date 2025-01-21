@@ -5,7 +5,11 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        raleway: ["Jost", 'sans-serif'], // Use raleway as the default font
+      },
+    },
   },
   plugins: [],
 }
