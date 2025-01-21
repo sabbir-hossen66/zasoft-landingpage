@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Title from '../../ui/title/Title';
 import { services } from '../../ui/data';
 import { FaArrowAltCircleUp, FaRegArrowAltCircleDown } from 'react-icons/fa';
+import ServiceImg from '../serviceImg/ServiceImg';
 
 const Services = () => {
   const [hoveredCard, setHoveredCard] = useState(null);
@@ -15,13 +16,13 @@ const Services = () => {
             {services.map((service, index) => (
               <div
                 key={index}
-                className="relative flex flex-col items-center text-center p-5 rounded-lg bg-gray-50 hover:shadow-lg transition-shadow duration-300 ease-in-out h-full"
+                className="relative flex flex-col items-center text-center p-5 rounded-lg bg-gray-50 hover:shadow-lg transition-all duration-500 ease-in-out transform hover:scale-105 h-full"
                 onMouseEnter={() => setHoveredCard(index)}
                 onMouseLeave={() => setHoveredCard(null)}
               >
                 {hoveredCard === index ? (
                   // Hover content
-                  <div className="absolute inset-0 bg-white text-gray-700 p-5 rounded-lg shadow-lg flex flex-col justify-between items-center">
+                  <div className="absolute inset-0 bg-white text-gray-700 p-5 rounded-lg shadow-lg flex flex-col justify-between items-center transition-opacity duration-500 ease-in-out opacity-100">
                     <p className="text-sm text-center">
                       Direct Access to a worldwide network structure and a team of proficient experts is what allows for pro-active network management, faster fault response times, and higher controlling power over our traffic.
                     </p>
@@ -29,7 +30,7 @@ const Services = () => {
                     <FaArrowAltCircleUp className="text-red-500 mt-4 text-2xl" />
                   </div>
                 ) : (
-
+                  // here is my Default content
                   <>
                     <div className="text-4xl text-teal-500 mb-4">
                       {service.icon}
@@ -51,6 +52,9 @@ const Services = () => {
           <hr />
         </div>
       </div>
+      {/* another section import here */}
+      <ServiceImg />
+
     </div>
   );
 };
