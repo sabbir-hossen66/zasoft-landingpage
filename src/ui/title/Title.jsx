@@ -17,7 +17,7 @@ const Title = ({ title, subtitle }) => {
         {/* Red Line */}
 
       </div>
-      <div className="w-16 h-1 bg-red-600 mt-3 mx-auto"></div>
+      <div className="w-16 h-1 bg-red-600 mt-10 lg:mt-3 mx-auto"></div>
 
     </>
 
