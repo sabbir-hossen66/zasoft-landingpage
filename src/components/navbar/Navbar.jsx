@@ -40,7 +40,7 @@ const Navbar = () => {
               <a href="#about" className="text-white">About</a>
               <a href="#services" className="text-white">Services</a>
               <a href="#partners" className="text-white">Partners</a>
-              <a href="#contact" className="text-white">Contact</a>
+              <a href="contact" className="text-white">Contact</a>
             </div>
           </div>
           <div className="hidden md:block">
@@ -69,22 +69,22 @@ const Navbar = () => {
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
         <div className="md:hidden bg-[#0b1e27] bg-opacity-70 backdrop-blur-md">
-          <div className="px-4 pt-4 pb-4 space-y-2">
-            <NavLink to="/" exact onClick={() => setIsMobileMenuOpen(false)}>
+          <div className="px-4 pt-4 pb-4 flex flex-col space-y-2">
+            <a href="/" className="text-white" exact onClick={() => setIsMobileMenuOpen(false)}>
               Home
-            </NavLink>
-            <NavLink to="/about" onClick={() => setIsMobileMenuOpen(false)}>
+            </a>
+            <a href="#about" className="text-white" onClick={() => setIsMobileMenuOpen(false)}>
               About
-            </NavLink>
-            <NavLink to="/services" onClick={() => setIsMobileMenuOpen(false)}>
+            </a>
+            <a href="#services" className="text-white" onClick={() => setIsMobileMenuOpen(false)}>
               Services
-            </NavLink>
-            <NavLink to="/partners" onClick={() => setIsMobileMenuOpen(false)}>
+            </a>
+            <a href="#partners" className="text-white" onClick={() => setIsMobileMenuOpen(false)}>
               Partners
-            </NavLink>
-            <NavLink to="/contact" onClick={() => setIsMobileMenuOpen(false)}>
+            </a>
+            <a href="#contact" className="text-white" onClick={() => setIsMobileMenuOpen(false)}>
               Contact
-            </NavLink>
+            </a>
             <button
               className="w-full px-4 py-2 border border-white border-opacity-30 rounded-md text-sm font-medium text-white bg-transparent hover:bg-white hover:bg-opacity-10 transition duration-300"
               onClick={() => setIsMobileMenuOpen(false)}
