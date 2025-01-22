@@ -6,7 +6,7 @@ const Partners = () => {
   useAOS();
   return (
     <div>
-      <div className="container mx-auto mt-20 px-4">
+      <div className="container mx-auto mt-20 px-4" id='partners'>
         {/* First Section */}
         <div className="flex flex-col lg:flex-row justify-between items-center lg:items-start lg:gap-10">
           {/* Heading Section */}

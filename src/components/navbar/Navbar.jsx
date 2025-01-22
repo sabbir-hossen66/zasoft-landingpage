@@ -34,13 +34,13 @@ const Navbar = () => {
           {/* Desktop Menu */}
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-4 uppercase">
-              <NavLink to="/" exact>
+              <a to="#" className="text-white" exact>
                 Home
-              </NavLink>
-              <NavLink to="/about">About</NavLink>
-              <NavLink to="/services">Services</NavLink>
-              <NavLink to="/services">Partners</NavLink>
-              <NavLink to="/contact">Contact</NavLink>
+              </a>
+              <a href="#about" className="text-white">About</a>
+              <a href="#services" className="text-white">Services</a>
+              <a href="#partners" className="text-white">Partners</a>
+              <a href="#contact" className="text-white">Contact</a>
             </div>
           </div>
           <div className="hidden md:block">

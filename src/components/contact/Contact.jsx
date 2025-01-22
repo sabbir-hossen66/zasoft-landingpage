@@ -5,7 +5,7 @@ import { MdMessage } from 'react-icons/md';
 
 const Contact = () => {
   return (
-    <div className='container mx-auto mt-20'>
+    <div className='container mx-auto mt-20' id='contact'>
       <div className='flex-col-1 p-3 lg:flex justify-evenly '>
         <div className='flex justify-between'>
           <div>

@@ -6,7 +6,7 @@ const AboutText = () => {
   useAOS();
 
   return (
-    <div className='flex-col-1 lg:flex justify-between'>
+    <div className='flex-col-1 lg:flex justify-between' id="about">
       {/* left side */}
       <div className="bg-white p-8 rounded-lg max-w-4xl mx-auto" data-aos="fade-right">
         <h2 className="text-3xl font-bold mb-6 text-gray-800">Our Values</h2>

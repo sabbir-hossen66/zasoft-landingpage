@@ -8,7 +8,7 @@ import { div } from 'framer-motion/client';
 const Services = () => {
   const [hoveredCard, setHoveredCard] = useState(null);
   return (
-    <div className="mt-20 px-4 md:px-8 lg:px-16">
+    <div className="mt-20 px-4 md:px-8 lg:px-16" id='services'>
       <Title title="OUR SERVICES" subtitle="OUR SERVICES" />
 
       <div className="bg-white mt-10">
