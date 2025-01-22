@@ -1,6 +1,6 @@
 # CareerLTD
 
-[ZafSoft](https://your-live-url.com)
+[ZafSoft]([https://your-live-url.com](https://carieer-ltd.vercel.app/))
 
 This project is built with **React** and **Tailwind CSS**, incorporating professional coding practices and reusable components. It features animations powered by **AOS (Animate On Scroll)** and an interactive slider implemented using **Swiper.js**.
 
