@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion'; // For animations
-import { FaServer, FaCloudUploadAlt, FaNetworkWired, FaGlobe, FaSitemap, FaCogs } from 'react-icons/fa';
+import { FaServer, FaCloudUploadAlt, FaNetworkWired, FaSitemap, FaCogs } from 'react-icons/fa';
 
 const features = [
   { icon: <FaCloudUploadAlt className="text-5xl text-teal-600" />, title: "100% Uptime" },
@@ -13,7 +13,7 @@ const features = [
 const FeaturesSection = () => {
   return (
     <div className="container mx-auto px-4 py-12">
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 text-center">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 text-center" data-aos="fade-up">
         {features.map((feature, index) => (
           <motion.div
             key={index}

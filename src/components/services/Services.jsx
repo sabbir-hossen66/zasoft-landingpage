@@ -3,6 +3,7 @@ import Title from '../../ui/title/Title';
 import { services } from '../../ui/data';
 import { FaArrowAltCircleUp, FaRegArrowAltCircleDown } from 'react-icons/fa';
 import ServiceImg from '../serviceImg/ServiceImg';
+import { div } from 'framer-motion/client';
 
 const Services = () => {
   const [hoveredCard, setHoveredCard] = useState(null);
@@ -31,6 +32,7 @@ const Services = () => {
                   </div>
                 ) : (
                   // here is my Default content
+
                   <>
                     <div className="text-4xl text-teal-500 mb-4">
                       {service.icon}
@@ -45,6 +47,7 @@ const Services = () => {
                       <FaRegArrowAltCircleDown />
                     </div>
                   </>
+
                 )}
               </div>
             ))}

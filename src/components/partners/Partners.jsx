@@ -1,7 +1,9 @@
 import React from 'react';
 import IconTabs from '../../ui/IconTabs';
+import useAOS from '../../ui/useAOS/UseAos';
 
 const Partners = () => {
+  useAOS();
   return (
     <div>
       <div className="container mx-auto mt-20 px-4">
@@ -24,7 +26,7 @@ const Partners = () => {
         {/* Second Section */}
         <div className="flex flex-col-reverse lg:flex-row justify-between items-center lg:items-start mt-10 lg:mt-16 gap-8 lg:gap-12">
           {/* Text Content */}
-          <div className="text-center lg:text-left">
+          <div className="text-center lg:text-left" data-aos="zoom-in">
             <p className="text-gray-700 text-sm md:text-base leading-relaxed">
               Through our partners’ best in technology, solve <br className="hidden md:block" />
               your unique, global business needs whether you're a small <br className="hidden md:block" />
@@ -36,7 +38,7 @@ const Partners = () => {
           </div>
 
           {/* Image Section */}
-          <div className="flex justify-center">
+          <div className="flex justify-center" data-aos="zoom-in-down">
             <img
               src="https://i.ibb.co.com/VBHMWrW/photo.png"
               alt=""
