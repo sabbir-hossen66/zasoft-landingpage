@@ -9,6 +9,8 @@ import 'swiper/css/navigation';
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
 import bannerOne from '../../assets/banner.png'
+import bannerTwo from '../../assets/banner2.png'
+import bannerThree from '../../assets/banner3.png'
 // import bannertwo from '../../assets/banner/banner2.jpg'
 // import bannerthree from '../../assets/banner/banner3.jpg'
 // import bannerfour from '../../assets/banner/banner4.jpg'
@@ -21,7 +23,7 @@ import bannerOne from '../../assets/banner.png'
 const Banner = () => {
   const progressCircle = useRef(null);
   const progressContent = useRef(null);
-  const onAutoplayTimeLeft = (time, progress) => {
+  const onAutoplayTimeLeft = (s, time, progress) => {
     progressCircle.current.style.setProperty('--progress', 1 - progress);
     progressContent.current.textContent = `${Math.ceil(time / 1000)}s`;
   };
@@ -54,6 +56,26 @@ const Banner = () => {
             </div>
           </div>
         </SwiperSlide>
+
+        <SwiperSlide>
+          <div className="relative h-full w-full">
+            <img className='w-full h-[820px]' src={bannerTwo} alt="Banner One" />
+            <div className="absolute inset-0 bg-gradient-to-t from-black via-gray-800 to-transparent opacity-75">
+              <h2 className='text-4xl lg:text-4xl  text-white text-center mt-[480px]'>Todays HighLight <br /> <span className='pt-4'>All News</span></h2>
+            </div>
+          </div>
+        </SwiperSlide>
+
+        <SwiperSlide>
+          <div className="relative h-full w-full">
+            <img className='w-full h-[820px]' src={bannerThree} alt="Banner One" />
+            <div className="absolute inset-0 bg-gradient-to-t from-black via-gray-800 to-transparent opacity-75">
+              <h2 className='text-4xl lg:text-4xl  text-white text-center mt-[480px]'>Todays HighLight <br /> <span className='pt-4'>All News</span></h2>
+            </div>
+          </div>
+        </SwiperSlide>
+
+
         <div className="autoplay-progress w-8" slot="container-end">
           <svg viewBox="0 0 48 48" ref={progressCircle}>
             {/* <circle cx="24" cy="24" r="20"></circle> */}
